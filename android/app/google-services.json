@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "711497567217",
+    "project_id": "grobag-e1ade",
+    "storage_bucket": "grobag-e1ade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711497567217:android:43d3b8980388c863669250",
+        "android_client_info": {
+          "package_name": "com.example.grocery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711497567217-tb24loh19hcb6gs4r39dljuutojnhkqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grocery_app",
+            "certificate_hash": "25d7eb84d74b8a48e7ff625ec8305cdb2fb04e5b"
+          }
+        },
+        {
+          "client_id": "711497567217-38gu7cjo8gcggdtuet7u61s2hoc0c6l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV7u69Rlfg057PXmQo7ZagVDEHJAcZjuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711497567217-38gu7cjo8gcggdtuet7u61s2hoc0c6l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
