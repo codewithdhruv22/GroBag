@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app/view/global.dart';
 import 'package:grocery_app/view/auth/otpVerify.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -24,6 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
           print(verificationID);
           verificationIDg = verificationID;
           this.vefID = verificationID;
+          currentUserID = phoneController.text;
           setState(() {});
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => OtpVerify()));

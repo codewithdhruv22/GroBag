@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery_app/view/createAccount.dart';
 
 import '../global.dart';
 
@@ -11,7 +12,6 @@ class OtpVerify extends StatefulWidget {
 }
 
 class _OtpVerifyState extends State<OtpVerify> {
-  String vefID = "";
   TextEditingController otpController = TextEditingController();
 
   _verifyOtp(String pin) async {
@@ -22,6 +22,8 @@ class _OtpVerifyState extends State<OtpVerify> {
       final authCred = await fAuth.signInWithCredential(phoneAuthCredential);
       if (authCred.user != null) {
         print("BADHAI HO AAP AA GAYE");
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => AccountCreateScreen()));
         //LOGIN SCUESS
       }
     } on FirebaseAuthException catch (e) {
@@ -62,7 +64,7 @@ class _OtpVerifyState extends State<OtpVerify> {
                       disabledBorder: InputBorder.none,
                       contentPadding: EdgeInsets.only(
                           left: 15, bottom: 11, top: 11, right: 15),
-                      hintText: "Enter Your 6-Digit Number",
+                      hintText: "Enter Your 6-Digit OTP",
                       hintStyle: TextStyle(color: Colors.white)),
                 ),
               ),
